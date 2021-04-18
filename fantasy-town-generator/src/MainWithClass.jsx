@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import ThemeContext from "./Context/ThemeContext";
 import AppTheme from "./Colours";
+import NationSelect from "./NationSelectors/SingleNationSelector";
 
 class Main extends Component {
     constructor() {
@@ -20,9 +21,7 @@ class Main extends Component {
                                 color: `${currentTheme.textColor}`,
 
                             }}>
-                                <h1>Heading 1</h1>
-                                <p>This is a paragraph</p>
-                                <button> This is a button</button>
+                                <NationSelect />
                             </main>
                         )
 
